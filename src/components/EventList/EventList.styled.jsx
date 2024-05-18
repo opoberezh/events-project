@@ -51,3 +51,10 @@ export const Organizer = styled.p`
   font-weight: 600;
   font-size: 18px;
 `;
+
+export const IconHand = styled.div`
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  transform: translate(50%, 50%);
+`;

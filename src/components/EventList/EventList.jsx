@@ -8,11 +8,13 @@ import Stack from '@mui/material/Stack';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import PanToolAltIcon from '@mui/icons-material/PanToolAlt';
 import {
   Container,
   DateOfEvent,
   Description,
   EventCard,
+  IconHand,
   Organizer,
 } from './EventList.styled';
 
@@ -60,6 +62,9 @@ const EventList = () => {
             <Description>{item.description}</Description>
             <DateOfEvent>{item.eventDate}</DateOfEvent>
             <Organizer>{item.organizer}</Organizer>
+            <IconHand>
+              <PanToolAltIcon style={{ fill: '#ffffff' }} />
+            </IconHand>
           </EventCard>
         ))}
         <Stack spacing={2} alignItems="center" sx={{ marginTop: 4 }}>
