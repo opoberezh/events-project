@@ -5,200 +5,224 @@
     "title": "Performance",
     "img": "https://media.gettyimages.com/id/957023718/de/foto/%C3%A4ngstlich-publikum-wartet-auf-die-vorh%C3%A4nge-zu-%C3%B6ffnen-um-die-leistung-zu-sehen.jpg?s=612x612&w=0&k=20&c=5JrS6TPoqmz34ENGKrMyuFkSkQee9qe41_tyjVQs9AU=",
     "description": "Regardless of which genre of performance you’re looking to pull together, TicketSource will have a handy guide to walk you through the logistics of making your performance event work.",
-    "eventDate": "2024-04-22 from 11am to 8pm",
-    "organiser": "Performance Studio"
+    "eventDate": "2024-04-22 at 11:00",
+    "organizer": "Performance Studio"
   },
   {
     "id": 2,
     "title": "Food events",
     "img": "https://media.gettyimages.com/id/1133705959/de/foto/a-woman-is-eating-a-french-fries.jpg?s=612x612&w=0&k=20&c=4HuxHtzzUULVsWbyVaYKpGxi342fSjwYWVlbfxr739c=",
     "description": "Food events are fantastic for community-based events and often focus on a local audience which can give you a fantastic marketing angle because you’re looking to recruit ticket holders based within a specific geographical radius.",
-    "eventDate": "2024-05-02 from 9am to 10pm",
-    "organiser": "KFC"
+    "eventDate": "2024-05-02 at 09:00",
+    "organizer": "KFC"
   },
   {
     "id": 3,
     "title": "Music festivals",
     "img": "https://media.gettyimages.com/id/451813127/de/foto/group-of-people-having-fun-at-music-concert.jpg?s=612x612&w=0&k=20&c=kKno3PiN3AJjbzfT1gdthdLtignKf14hbM5t5qT12YE=",
     "description": "We’ve already covered food festivals, but a traditional festival includes live music and entertainment for your attendees.",
-    "eventDate": "2024-05-06 from 3pm to 11pm",
-    "organiser": "Rock’n’Roll & Co"
+    "eventDate": "2024-05-06 at 15:30",
+    "organizer": "Rock’n’Roll & Co"
   },
   {
     "id": 4,
     "title": "Beer festival",
     "img": "https://media.gettyimages.com/id/1091465530/de/foto/gruppe-von-menschen-auf-einem-musikfestival.jpg?s=612x612&w=0&k=20&c=m4eVQ6zGXuiXse09Lj7WYGLh8NXBjLVlg1rrFpYWZ9M=",
     "description": "An adult event with a slightly more fun twist is a beer festival - which is a fantastic event for you to host within your local area. Similar to wine tasting, your beer festival should offer a variety of different beers for your ticket holders to sample and enjoy.",
-    "eventDate": "2024-05-06 from 7pm to 11pm",
-    "organiser": "Beer Craft Company"
+    "eventDate": "2024-05-06 at 19:00",
+    "organizer": "Beer Craft Company"
   },
   {
     "id": 5,
     "title": "Wine festival",
     "img": "https://media.gettyimages.com/id/534940776/de/foto/detail-of-assorted-wines.jpg?s=612x612&w=0&k=20&c=UY6hJ81S9n6NXSiSK7vl6jD_StKGX-aKC0o9B0Uinac=",
     "description": "An adult event with a slightly more fun twist is a beer festival - which is a fantastic event for you to host within your local area. Similar to wine tasting, your beer festival should offer a variety of different beers for your ticket holders to sample and enjoy.",
-    "eventDate": "2024-05-07 from 7pm to 11pm",
-    "organiser": "Tikvish"
+    "eventDate": "2024-05-07 at 20:00",
+    "organizer": "Tikvish"
   },
   {
     "id": 6,
     "title": "Theatre performance",
     "img": "https://media.gettyimages.com/id/1349307526/de/foto/reife-performerin-auf-der-b%C3%BChne.jpg?s=612x612&w=0&k=20&c=jBE2tU9ybFiPVELJ1XkBuK3ezddqk35DhliTjAVfK1I=",
     "description": "Theatre performances come in a variety of shapes and sizes and can include plays, monologues and musicals of all different genres - from comedy to drama and everything in between.",
-    "eventDate": "2024-06-12 from 7pm to 9pm",
-    "organiser": "Nacional Theatre of Ballet"
+    "eventDate": "2024-06-12 at 17:45",
+    "organizer": "National Theatre of Ballet"
   },
   {
     "id": 7,
     "title": "Dance event",
     "img": "https://media.gettyimages.com/id/503612392/de/foto/genie%C3%9Fen-sie-ihre-nacht.jpg?s=612x612&w=0&k=20&c=k4jA7rgTzl-rTUu-I5mG30BtGMgQsMcIVn-h4m-bSZQ=",
     "description": "Dance recitals typically consist of a group of dancers who attend a class together performing for an audience. These dance performances can have dancers of all different ages, different abilities, and different dance genres too - but you’ll need to get the logistics right to ensure that the recital is a success.",
-    "eventDate": "2024-06-12 from 6pm to 10pm",
-    "organiser": "Performance Studio"
+    "eventDate": "2024-06-12 at 18:00",
+    "organizer": "Performance Studio"
   },
   {
     "id": 8,
     "title": "Comedy performance",
     "img": "https://media.gettyimages.com/id/465824970/de/vektor/stand-up-comedy-night-b%C3%BChne-mit-neon-zeichen-und-brick-wall.jpg?s=612x612&w=0&k=20&c=6mfBXoiVocKqg3jZGdhyzxYhGst5zkeMUU13z4IC1Ts=",
     "description": "Who doesn’t love a little stand-up comedy? Whether you’re looking to wrangle in some celebrity talent from the comedy circuit or showcase the comedic talents of your local area with an amateur comedy set, you’re going to need to know what things to consider when you’re bringing a comedy performance to life.",
-    "eventDate": "2024-06-20 from 10am to 2pm",
-    "organiser": "Comedy Studio"
+    "eventDate": "2024-06-20 at 10:00",
+    "organizer": "Comedy Studio"
   },
   {
     "id": 9,
     "title": "Music performance",
     "img": "https://media.gettyimages.com/id/149615583/de/foto/musicians-playing-in-jazz-band-on-stage.jpg?s=612x612&w=0&k=20&c=YYWaMz11HOrYvJPkT7MitPZPCn9f6KdBMgU_fXKOC5A=",
     "description": "Hosting a music performance will be a fantastic addition to your local community, and music performance is indeed an event that many people are very keen to do.",
-    "eventDate": "2024-07-01 from 4pm to 9pm",
-    "organiser": "JazzBand"
+    "eventDate": "2024-07-01 at 16:00",
+    "organizer": "JazzBand"
   },
   {
     "id": 10,
     "title": "Guest speaker",
     "img": "https://media.gettyimages.com/id/112704928/de/foto/smiling-black-man-in-tuxedo-standing-at-microphone.jpg?s=612x612&w=0&k=20&c=j45Seda6LzKBaG5VICXOEy1H4lrIidi5wLZ_ABxGyv0=",
     "description": "While not strictly a creative performance event, guest speaker events are closely related to performance events, following the same structure of a performance where you would have the performance element - in this instance a talk by the guest speaker - and the audience element.",
-    "eventDate": "2024-07-08 from 3pm to 6pm",
-    "organiser": "TeddyClub"
+    "eventDate": "2024-07-08 at 09:00",
+    "organizer": "TeddyClub"
   },
   {
     "id": 11,
     "title": "Conferences",
     "img": "https://media.gettyimages.com/id/1392016982/de/foto/gemischte-gruppe-von-gesch%C3%A4ftsleuten-die-um-einen-tisch-sitzen-und-sich-unterhalten.jpg?s=612x612&w=0&k=20&c=G8u61PZKb-Zo34GSAtlWP0FZbh9akbxC9xNIxUgHeos=",
     "description": "Planning a conference can be an incredibly lucrative event, attracting a range of various individuals from professions related to the theme of the conference, where you will typically find a variety of different talks from keynote speakers related to a specific theme.",
-    "eventDate": "2024-07-08 from 9am to 12:30pm",
-    "organiser": "BusinessEvents"
+    "eventDate": "2024-07-08 at 10:45",
+    "organizer": "BusinessEvents"
   },
   {
     "id": 12,
     "title": "Workshops",
     "img": "https://media.gettyimages.com/id/956479962/de/foto/junge-kreative-gesch%C3%A4ftsleute-treffen-sich-im-b%C3%BCro.jpg?s=612x612&w=0&k=20&c=PHZPR4sRBi9y6VUFrKoo83meo0oX0BKCRrKbBPqd-Ls=",
     "description": "If you’re looking to run a workshop, you’ll need to find an appropriate host to meet the theme of the workshop, as well as find an event space that will facilitate the workshop, offering plenty of space for any activities or related practical work to take place.",
-    "eventDate": "2024-07-12 from 10am to 2pm",
-    "organiser": "BusinessEvents"
+    "eventDate": "2024-07-12 at 09:15",
+    "organizer": "BusinessEvents"
   },
   {
     "id": 13,
     "title": "Classes",
     "img": "https://media.gettyimages.com/id/1324181858/de/foto/asiatische-yoga-studenten-beobachten-und-%C3%BCben-w%C3%A4hrend-des-unterrichts.jpg?s=612x612&w=0&k=20&c=2aPsYwx9C25DE8ZtJDSsgCzMQ9nwz9eHtRvF7Gt4T9I=",
     "description": "Whether you’re hosting a yoga class, a cooking class, a photo editing class or anything in between - you’re going to need to first figure out what you want to teach before moving on to find an appropriate venue, to ironing out the details of your class and then promoting it so that you can fill the required number of spaces!",
-    "eventDate": "2024-07-17 from 10am to 1:30pm",
-    "organiser": "LifeSportCo"
+    "eventDate": "2024-07-17 at 10:00",
+    "organizer": "LifeSportCo"
   },
   {
     "id": 14,
     "title": "Charity Festival",
     "img": "https://media.gettyimages.com/id/1498170916/de/foto/ein-p%C3%A4rchen-nimmt-eine-t%C3%BCte-mit-lebensmitteln-in-der-tafel-mit.jpg?s=612x612&w=0&k=20&c=7CSui_hoqMjwBZIGUSN9gU7xlBVig7bW9VEv608q6-Y=",
     "description": "A charity event is an event whereby the sole purpose is to raise funds for a not-for-profit charity. You can host a wide range of different events in honour of a charity of your choice, donating the proceeds to help said charity.",
-    "eventDate": "2024-07-28 from 8am to 1pm",
-    "organiser": "Municipality"
+    "eventDate": "2024-07-28 at 11:00",
+    "organizer": "Municipality"
   },
   {
     "id": 15,
     "title": "Popup Events",
     "img": "https://media.gettyimages.com/id/1400654805/de/foto/madrid-spain-the-security-guard-at-the-first-physical-shein-store-in-madrid-on-02-june-2022-in.jpg?s=612x612&w=0&k=20&c=H5MnUsKV0kS1rob4VlLwQgii3LdlfRIRyK3u4C5kosM=",
     "description": "If you’re looking to plan an event that has an element of excitement and mystery - then a popup event might be exactly what you’re looking for.",
-    "eventDate": "2024-07-28 from 11am to 4pm",
-    "organiser": "Shein"
+    "eventDate": "2024-07-30 at 10:00",
+    "organizer": "Shein"
   },
   {
     "id": 16,
     "title": "Virtual Events",
     "img": "https://media.gettyimages.com/id/1351141161/de/foto/frau-mit-vr-brille.jpg?s=612x612&w=0&k=20&c=qDBIBI9VyFA28k7jWh-eoLfpEom9LhwEf3EV8nfU_7s=",
     "description": "Virtual events have never been more popular than in recent years, and due to the exciting range of events available to host virtually, it doesn’t seem like they’re going to slow down any time soon.",
-    "eventDate": "2024-08-05 from 11:30am to 6pm",
-    "organiser": "Virtual Community"
+    "eventDate": "2024-08-05 at 11:30",
+    "organizer": "Virtual Community"
   },
   {
     "id": 17,
     "title": "Company Meetings",
     "img": "https://media.gettyimages.com/id/1365436662/de/foto/erfolgreiche-partnerschaft.jpg?s=612x612&w=0&k=20&c=w-gcslzboJUQpgku_7OkTRaWX_ajuG26ATJuvk9ikfA=",
     "description": "Company meetings are an incredibly popular and important type of corporate event, gathering multiple stakeholders within a company together to discuss specific business matters. Company meetings are often lengthy and important, perhaps requiring multiple rooms for breakout space, the use of technology like screens and projectors, and refreshments for those attending too.",
-    "eventDate": "2024-08-10 from 8am to 4:30pm",
-    "organiser": "BestCorp"
+    "eventDate": "2024-08-10 at 08:30",
+    "organizer": "BestCorp"
   },
   {
     "id": 18,
     "title": "Weddings",
-    "img": "https://media.gettyimages.com/id/1169824902/de/foto/bride-and-groom-kissing-on-wooden-bridge-over-river-picture-id1169824902?s=612x612&w=0&k=20&c=28FkD2WSZyRvc8fMP7ATPvJLqAqMWt5u0hujSHtthl8=",
+    "img": "https://media.gettyimages.com/id/929904308/de/foto/blumenstrau%C3%9F-am-strand.jpg?s=612x612&w=0&k=20&c=IJ7K9NEtkbczxkBRYRT3XsZkB1qWntjeLO8kSWkXgP0=",
     "description": "Weddings are one of the most joyous occasions that one can plan, and typically involve a variety of different elements to plan and bring together to make the day a success.",
-    "eventDate": "2024-09-15 from 11am to 10pm",
-    "organiser": "Happily Ever After"
+    "eventDate": "2024-09-15 at 11:00",
+    "organizer": "Happily Ever After"
   },
   {
   "id": 19,
   "title": "Team-building Activities",
   "img": "https://media.gettyimages.com/id/1468499955/de/foto/h%C3%A4nde-zusammen-gesch%C3%A4ftsleute-und-teambuilding-f%C3%BCr-unternehmensmission-projektzusammenarbeit.jpg?s=612x612&w=0&k=20&c=xJrFD37aCyQK6jpTyIJVnknf-jm-h_RVJdgc3jgvgTg=",
   "description": "Equally as important as traditional business matters, team-building activities are another style of corporate event that can require event planning. Team-building events can take many forms, with popular away days including scavenger hunts, murder mystery events, quizzes and much more!",
-  "eventDate": "2024-08-21 from 8am to 12pm",
-  "organiser": "Celebrities"
+  "eventDate": "2024-08-21 at 08:00",
+  "organizer": "Celebrities"
 },
 {
   "id": 20,
   "title": "Networking Events",
   "img": "https://media.gettyimages.com/id/1371763060/de/foto/social-media-apps.jpg?s=612x612&w=0&k=20&c=fkRukiwjJrx3hOONzX6XEJNwD-besPd41SZy8gyHHiI=",
   "description": "Networking events typically bring together business professionals within the same or complimentary sectors but across multiple different businesses, allowing them to connect, build professional relationships and share best practices where applicable.",
-  "eventDate": "2024-08-23 from 10am to 3pm",
-  "organiser": "SocialNetworks"
+  "eventDate": "2024-08-23 at 10:00",
+  "organizer": "SocialNetworks"
 },
 {
   "id": 21,
   "title": "Community Events",
   "img": "https://media.gettyimages.com/id/1486287149/de/foto/gruppe-von-multirassischen-asiatischen-gesch%C3%A4ftsteilnehmern-unterh%C3%A4lt-sich-nach-erfolgreicher.jpg?s=612x612&w=0&k=20&c=542Z-CP5S1djpu58u0_GT3Kk_2dsMd7L12rhYSYKysA=",
   "description": "Another exciting genre of event planning is community events. Community events are simply what it says on the tin - events within a specific local community, designed to bring said community together.",
-  "eventDate": "2024-08-25 from 8am to 11am",
-  "organiser": "Church of 7 day"
+  "eventDate": "2024-08-25 at 08:30",
+  "organizer": "Church of 7 day"
 },
 {
   "id": 22,
   "title": "Guided Tours",
   "img": "https://media.gettyimages.com/id/1171689182/de/foto/buenos-aires-argentina-loli-a-guide-with-free-walks-buenos-aires-leads-tourists-through-the.jpg?s=612x612&w=0&k=20&c=P569_3x1Iz0-DkKETotSMRrScMBvCnQiNrAtJgZnoNg=",
   "description": "A guided tour might not initially seem like a more typical community event, but if your local community is an area of interest, or you can think of a specific theme for your guided tour, then it can make a brilliant community event for everyone to enjoy.",
-  "eventDate": "2024-08-27 from 8am to 7pm",
-  "organiser": "Travel Tours"
+  "eventDate": "2024-08-27 at 08:50",
+  "organizer": "Travel Tours"
 },
 {
   "id": 23,
   "title": "Museum Tours",
   "img": "https://media.gettyimages.com/id/1240619674/de/foto/a-photo-shows-the-humanoid-robot-r1-designed-by-the-italian-institute-of-technology-serving-as.jpg?s=612x612&w=0&k=20&c=saaDTymBcoemAHo5OnmVDbIwNyj-VSEoVlORVR_SEk4=",
   "description": "Museum tours offer an insightful and educational experience for participants. They provide an opportunity to explore and learn about the artifacts, exhibits, and history curated within museums.",
-  "eventDate": "2024-09-03 from 8am to 7pm",
-  "organiser": "Museum Tours"
+  "eventDate": "2024-09-03 at 10:00",
+  "organizer": "Museum Tours"
 },
 {
   "id": 24,
   "title": "Sport Events",
   "img": "https://media.gettyimages.com/id/1027938356/de/foto/battle-rope-training-auf-cross-training.jpg?s=612x612&w=0&k=20&c=rbFbHI-3blvhySSFQwaN5c2x0UIo_G4FMONDgmb7BQw=",
   "description": "Sports events are often extremely popular events on our system, due to their fun and competitive nature and the opportunity to celebrate the sporting talent within the local community.",
-  "eventDate": "2024-09-18 from 8am to 9pm",
-  "organiser": "Sport Association"
+  "eventDate": "2024-09-18 at 08:00",
+  "organizer": "Sport Association"
 },
 {
   "id": 25,
   "title": "Outdoor Cinema",
   "img": "https://media.gettyimages.com/id/487371742/de/foto/pool-party.jpg?s=612x612&w=0&k=20&c=yIlB1DXr81_KCe9qEe5FlPWlCsWYMh1vSndE8WX5gUI=",
   "description": "A somewhat innovative yet extremely effective community event is to host an outdoor cinema. This is where a film is shown on a large projector in an outdoor venue, and attendees can come and enjoy a film in an exciting and different setting.",
-  "eventDate": "2024-09-18 from 11am to 7pm",
-  "organiser": "Cinema Party"
+  "eventDate": "2024-09-18 at 11:00",
+  "organizer": "Cinema Party"
+},
+{
+  "id": 26,
+  "title": "Wine tasting",
+  "img": "https://media.gettyimages.com/id/490341136/de/foto/weinprobe.jpg?s=612x612&w=0&k=20&c=UObZuL_q6aA30WcZylsK0FyHa8EtYvcy-rj-FmwCMpc=",
+  "description": "If you’re looking to host an over 18s event, then wine tasting can be a fantastic idea. You can pair with a local venue, offer a range of different wines for your ticket holders to taste, and offer information on each of the wines sampled so that your event attendees leave with an education as well as a taste for some new wine varieties!",
+  "eventDate": "2024-09-18 at 19:00",
+  "organizer": "Toskana"
+},
+{
+  "id": 27,
+  "title": "Celebrity events",
+  "img": "https://media.gettyimages.com/id/130406499/de/foto/paar-trinken-champagner-in-limo.jpg?s=612x612&w=0&k=20&c=LjKh8zLnYFjfk_YDGGlR878Lc-afpUCK_jBxyraj9k0=",
+  "description": "With guest speaker events, you’d typically have a speaker who was seen as an expert, celebrity or a notable figure within their field, delivering a talk about their experience and their story, perhaps with an audience participation Q&A session towards the end. When hunting for a venue for a guest speaker event, you’ll need to find one that offers a speaker-audience setup, perhaps with a PA system and a screen for any accompanying visual elements!",
+  "eventDate": "2024-09-18 at 21:00",
+  "organizer": "Party Maker"
+},
+{
+  "id": 28,
+  "title": "Virtual quizzes",
+  "img": "https://media.gettyimages.com/id/1693611773/de/foto/chiba-japan-attendees-wearing-pico-4-vr-headsets-play-video-games-during-the-tokyo-game-show.jpg?s=612x612&w=0&k=20&c=MohxJUTFfOWlYLECsDHEVX8bHkLaq2Sm2ijTbX0LEK8=",
+  "description": "Another type of virtual event that works incredibly well is a virtual quiz. You can prepare the quiz ahead of time, utilising a presentation to provide an array of accompanying visual effects, with teams or individuals playing along at home and recording their scores.",
+  "eventDate": "2024-09-18 at 12:30",
+  "organizer": "PICO"
 }
 ]
 }

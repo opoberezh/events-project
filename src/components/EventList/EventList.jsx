@@ -7,6 +7,22 @@ import PaginationItem from '@mui/material/PaginationItem';
 import Stack from '@mui/material/Stack';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {
+  Container,
+  DateOfEvent,
+  Description,
+  EventCard,
+  Organizer,
+} from './EventList.styled';
+
+const theme = createTheme({
+  palette: {
+    darkOrange: {
+      main: '#FF8C00',
+    },
+  },
+});
 
 const EventList = () => {
   const dispatch = useDispatch();
@@ -27,30 +43,41 @@ const EventList = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div>
-      {items.map((item) => (
-        <div key={item.id}>
-          <h2>{item.title}</h2>
-          <img src={item.img} loading="lazy" alt={item.title} />
-          <p>{item.description}</p>
-          <p>{item.eventDate}</p>
-          <p>{item.organizer}</p>
-        </div>
-      ))}
-      <Stack spacing={2} alignItems="center" sx={{ marginTop: 4 }}>
-        <Pagination
-          count={3}
-          page={pageNumber + 1}
-          onChange={(event, value) => setPageNumber(value - 1)}
-          renderItem={(item) => (
-            <PaginationItem
-              slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
-              {...item}
+    <ThemeProvider theme={theme}>
+      <Container>
+        {items.map((item) => (
+          <EventCard key={item.id}>
+            <h2>{item.title}</h2>
+            <img
+              src={item.img}
+              loading="lazy"
+              alt={item.title}
+              width={180}
+              height={130}
+              style={{ margin: '0 auto' }}
             />
-          )}
-        />
-      </Stack>
-    </div>
+
+            <Description>{item.description}</Description>
+            <DateOfEvent>{item.eventDate}</DateOfEvent>
+            <Organizer>{item.organizer}</Organizer>
+          </EventCard>
+        ))}
+        <Stack spacing={2} alignItems="center" sx={{ marginTop: 4 }}>
+          <Pagination
+            count={3}
+            page={pageNumber + 1}
+            color="darkOrange"
+            onChange={(event, value) => setPageNumber(value - 1)}
+            renderItem={(item) => (
+              <PaginationItem
+                slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
+                {...item}
+              />
+            )}
+          />
+        </Stack>
+      </Container>
+    </ThemeProvider>
   );
 };
 
