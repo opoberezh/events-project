@@ -1,7 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { selectError, selectEvents, selectIsLoading } from '../redux/selectors';
-import { useEffect, useState } from 'react';
 import { eventActions } from '../redux/eventsSlice';
+import { useEffect, useState } from 'react';
+import Pagination from '@mui/material/Pagination';
+import PaginationItem from '@mui/material/PaginationItem';
+import Stack from '@mui/material/Stack';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const EventList = () => {
   const dispatch = useDispatch();
@@ -11,26 +16,15 @@ const EventList = () => {
   const [pageNumber, setPageNumber] = useState(0);
   const pageSize = 12;
 
-  const nextPage = () => {
-    setPageNumber(pageNumber + 1);
-  };
-  const prevPage = () => {
-    if (pageNumber > 0) {
-      setPageNumber(pageNumber - 1);
-    }
-  };
+  // const nextPage = () => setPageNumber((prevPage) => prevPage + 1);
+  // const prevPage = () => setPageNumber((prevPage) => Math.max(prevPage - 1, 0));
 
   useEffect(() => {
     dispatch(eventActions.fetchEvents({ pageSize, pageNumber }));
-  }, [dispatch, pageNumber]);
+  }, [dispatch, pageNumber, pageSize]);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
     <div>
@@ -43,10 +37,19 @@ const EventList = () => {
           <p>{item.organizer}</p>
         </div>
       ))}
-      <button onClick={prevPage} disabled={pageNumber === 0}>
-        Previous
-      </button>
-      <button onClick={nextPage}>Next</button>
+      <Stack spacing={2} alignItems="center" sx={{ marginTop: 4 }}>
+        <Pagination
+          count={3}
+          page={pageNumber + 1}
+          onChange={(event, value) => setPageNumber(value - 1)}
+          renderItem={(item) => (
+            <PaginationItem
+              slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
+              {...item}
+            />
+          )}
+        />
+      </Stack>
     </div>
   );
 };

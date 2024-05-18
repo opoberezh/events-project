@@ -21,17 +21,16 @@ export const eventsSlice = createSlice({
   name: 'events',
   initialState: {
     items: [],
-    page: 1,
     isLoading: false,
     error: null,
   },
-  extraReducers: (builder) =>
+  extraReducers: (builder) => {
     builder
       .addCase(fetchEvents.pending, handlePending)
       .addCase(fetchEvents.fulfilled, handleFetchEventsFulfilled)
-      .addCase(fetchEvents.rejected, handleRejected),
+      .addCase(fetchEvents.rejected, handleRejected);
+  },
 });
 
 export const eventsReducer = eventsSlice.reducer;
-
 export const eventActions = { ...eventsSlice.actions, fetchEvents };

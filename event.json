@@ -1,4 +1,5 @@
-[
+{
+  "events":[
   {
     "id": 1,
     "title": "Performance",
@@ -200,3 +201,4 @@
   "organiser": "Cinema Party"
 }
 ]
+}
