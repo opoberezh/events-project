@@ -6,22 +6,30 @@ export const Container = styled.div`
   gap: 50px;
 `;
 
+export const Title = styled.h2`
+  font-size: 20px;
+`;
+
 export const EventCard = styled.div`
   display: flex;
   flex-direction: column;
   // align-items: center;
   width: 230px;
-  height: 350px;
+  height: 370px;
   padding: 10px;
   border: 2px solid #ff8c00;
   // margin-bottom: 20px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  box-shadow:
+    0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 `;
 
 export const DateOfEvent = styled.p`
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
 `;
 export const Description = styled.p`
   position: absolute;
@@ -46,10 +54,10 @@ export const Description = styled.p`
 `;
 
 export const Organizer = styled.p`
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
   font-style: italic;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 `;
 
 export const IconHand = styled.div`
@@ -57,4 +65,10 @@ export const IconHand = styled.div`
   bottom: 2%;
   left: 0;
   transform: translate(50%, 50%);
+`;
+
+export const RegisterWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
 `;

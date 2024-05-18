@@ -16,6 +16,8 @@ import {
   EventCard,
   IconHand,
   Organizer,
+  RegisterWrapper,
+  Title,
 } from './EventList.styled';
 
 const theme = createTheme({
@@ -49,7 +51,7 @@ const EventList = () => {
       <Container>
         {items.map((item) => (
           <EventCard key={item.id}>
-            <h2>{item.title}</h2>
+            <Title>{item.title}</Title>
             <img
               src={item.img}
               loading="lazy"
@@ -62,6 +64,11 @@ const EventList = () => {
             <Description>{item.description}</Description>
             <DateOfEvent>{item.eventDate}</DateOfEvent>
             <Organizer>{item.organizer}</Organizer>
+            <RegisterWrapper>
+              <p>Register</p>
+              <p>View</p>
+            </RegisterWrapper>
+
             <IconHand>
               <PanToolAltIcon style={{ fill: '#ffffff' }} />
             </IconHand>

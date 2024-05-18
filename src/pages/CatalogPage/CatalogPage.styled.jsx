@@ -12,12 +12,10 @@ export const Block = styled.div`
 `;
 export const Title = styled.h1`
   color: #ff8c00;
-  // text-shadow:
-  //   0 0 5px #00baff,
-  //   0 0 10px #00baff,
-  //   0 0 20px #00baff,
-  //   0 0 40px #00baff,
-  //   0 0 80px #00baff;
+  text-shadow:
+    0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 `;
 
 export const StyledLink = styled(Link)`
