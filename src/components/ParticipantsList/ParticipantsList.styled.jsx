@@ -6,14 +6,15 @@ export const Wrapper = styled.div`
 
 export const StyledList = styled.ul`
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: culm;
+
   align-items: center;
-  gap: 14px;
+  gap: 10px;
 `;
 
 export const StyledItems = styled.li`
-  padding: 5px;
-  border: 1px solid #1256da;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #1256da;
   border-radius: 10px;
 `;

@@ -7,6 +7,7 @@ import ParticipantsList from '../ParticipantsList/ParticipantsList';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectEvents, selectParticipants } from '../redux/selectors';
 import { TextWrapper, StyledText } from './ViewModal.styled';
+import CloseIcon from '@mui/icons-material/Close';
 
 const style = {
   position: 'absolute',
@@ -48,7 +49,19 @@ export default function ViewModal({ open, setOpen, eventId }) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography variant="h4" component="h3">
+          <CloseIcon
+            onClick={handleClose}
+            sx={{
+              position: 'absolute',
+              top: '6%',
+              left: '93%',
+              transform: 'translate(-50%, -50%)',
+              width: 32,
+              height: 32,
+              cursor: 'pointer',
+            }}
+          />
+          <Typography sx={{ color: '#1e90ff' }} variant="h4" component="h3">
             {event ? `${event.title} participants` : 'Loading...'}{' '}
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>

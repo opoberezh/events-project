@@ -67,7 +67,12 @@ const RegisterModal = ({ open, setOpen, eventId }) => {
               cursor: 'pointer',
             }}
           />
-          <Typography id="modal-modal-title" variant="h4" component="h3">
+          <Typography
+            id="modal-modal-title"
+            sx={{ color: '#1e90ff' }}
+            variant="h4"
+            component="h3"
+          >
             Event registration
           </Typography>
           <Formik
