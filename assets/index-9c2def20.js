@@ -382,8 +382,8 @@ attempted value: ${s}
   display: flex;
 `,e5=G.ul`
   display: flex;
-  flex-direction: culm;
-
+  flex-direction: column;
+  width: 100%;
   align-items: center;
   gap: 10px;
 `,t5=G.li`
