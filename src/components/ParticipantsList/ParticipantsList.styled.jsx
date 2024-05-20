@@ -6,8 +6,8 @@ export const Wrapper = styled.div`
 
 export const StyledList = styled.ul`
   display: flex;
-  flex-direction: culm;
-
+  flex-direction: column;
+  width: 100%;
   align-items: center;
   gap: 10px;
 `;
