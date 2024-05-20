@@ -38,7 +38,7 @@ export const Description = styled.p`
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 40px 20px;
 
   overflow: auto;
   transition: transform 0.3s ease;

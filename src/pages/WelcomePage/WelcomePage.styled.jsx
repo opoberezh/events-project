@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
-import hero from '../../assets/hero.jpg';
+import hero from '../../assets/rock.jpg';
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  justify-content: flex-start;
+  justify-content: center;
 
-  padding: 200px 200px;
+  padding: 250px 0 0 463px;
 
   background-image: url(${hero});
   height: 100vh;
@@ -18,15 +18,19 @@ export const Container = styled.div`
   overflow: hidden;
 `;
 
+export const Wrapper = styled.div`
+  margin: 0 auto;
+`;
+
 export const Title = styled.h1`
-  font-size: 48px;
+  font-size: 42px;
   margin: 0;
   margin-right: 10px;
-  color: #ffffff;
+  color: #fff;
 
   text-shadow:
-    0 0px 40px #ffffff,
-    0 0 50px #ffffff;
+    0 0px 40px #000000,
+    0 0 50px #000000;
 `;
 
 export const Button = styled(Link)`
@@ -37,7 +41,7 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background: #1e90ff;
+  background: #1256da;
   color: #fff;
   margin-top: 50px;
   margin-left: auto;
@@ -55,11 +59,13 @@ export const Button = styled(Link)`
     3s,
     background-color 0.3s;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    background-color: #1e90ff;
     box-shadow:
-      10px 5px 5px rgba(255, 255, 255, 0.4),
-      0px 15px 6px rgba(255, 255, 255, 0.1),
-      0px 10px 20px rgba(255, 255, 255, 0.1);
+      10px 5px 5px rgba(0, 0, 0, 0.4),
+      0px 15px 6px rgba(0, 0, 0, 0.1),
+      0px 10px 20px rgba(0, 0, 0, 0.1);
   }
   &:active {
     background-color: #ffffff;

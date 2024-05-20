@@ -1,10 +1,12 @@
-import { Button, Container, Title } from './WelcomePage.styled';
+import { Button, Container, Title, Wrapper } from './WelcomePage.styled';
 
 const WelcomePage = () => {
   return (
     <Container>
-      <Title>Welcome to Event Academy</Title>
-      <Button to={'/catalog'}>Let&apos;s Start</Button>
+      <Wrapper>
+        <Title>Welcome to Event Academy</Title>
+        <Button to={'/catalog'}>Let&apos;s Start</Button>
+      </Wrapper>
     </Container>
   );
 };
