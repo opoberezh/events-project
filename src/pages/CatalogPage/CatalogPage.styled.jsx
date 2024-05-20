@@ -11,7 +11,7 @@ export const Block = styled.div`
   text-align: flex-start;
 `;
 export const Title = styled.h1`
-  color: #ff8c00;
+  color: #1e90ff;
   text-shadow:
     0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 2px 1px rgba(0, 0, 0, 0.08),

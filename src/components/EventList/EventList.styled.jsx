@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
@@ -13,12 +14,12 @@ export const Title = styled.h2`
 export const EventCard = styled.div`
   display: flex;
   flex-direction: column;
-  // align-items: center;
+
   width: 230px;
   height: 370px;
   padding: 10px;
-  border: 2px solid #ff8c00;
-  // margin-bottom: 20px;
+  border: 2px solid #1256da;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -41,7 +42,7 @@ export const Description = styled.p`
 
   overflow: auto;
   transition: transform 0.3s ease;
-  background-color: #ff8c00;
+  background-color: #1256da;
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
@@ -71,4 +72,7 @@ export const RegisterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 30px 0 0 0;
+`;
+export const StyledLink = styled(Link)`
+  color: #1e90ff;
 `;

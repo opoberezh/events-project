@@ -37,7 +37,7 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background: #ff8c00;
+  background: #1e90ff;
   color: #fff;
   margin-top: 50px;
   margin-left: auto;
@@ -63,6 +63,6 @@ export const Button = styled(Link)`
   }
   &:active {
     background-color: #ffffff;
-    color: #ff8c00;
+    color: #1e90ff;
   }
 `;

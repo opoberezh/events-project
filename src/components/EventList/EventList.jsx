@@ -17,13 +17,16 @@ import {
   IconHand,
   Organizer,
   RegisterWrapper,
+  StyledLink,
   Title,
 } from './EventList.styled';
 
+import RegisterModal from '../RegisterModal/RegisterModal';
+
 const theme = createTheme({
   palette: {
-    darkOrange: {
-      main: '#FF8C00',
+    pelorous: {
+      main: '#1E90FF',
     },
   },
 });
@@ -36,8 +39,14 @@ const EventList = () => {
   const [pageNumber, setPageNumber] = useState(0);
   const pageSize = 12;
 
-  // const nextPage = () => setPageNumber((prevPage) => prevPage + 1);
-  // const prevPage = () => setPageNumber((prevPage) => Math.max(prevPage - 1, 0));
+  const [registerModalOpen, setRegisterModalOpen] = useState(false);
+  // Створюємо стан для відстеження id події для реєстрації
+  const [selectedEventId, setSelectedEventId] = useState(null);
+
+  const handleOpenRegisterModal = (eventId) => {
+    setSelectedEventId(eventId);
+    setRegisterModalOpen(true);
+  };
 
   useEffect(() => {
     dispatch(eventActions.fetchEvents({ pageSize, pageNumber }));
@@ -65,8 +74,10 @@ const EventList = () => {
             <DateOfEvent>{item.eventDate}</DateOfEvent>
             <Organizer>{item.organizer}</Organizer>
             <RegisterWrapper>
-              <p>Register</p>
-              <p>View</p>
+              <StyledLink onClick={() => handleOpenRegisterModal(item.id)}>
+                Register
+              </StyledLink>
+              <StyledLink>View</StyledLink>
             </RegisterWrapper>
 
             <IconHand>
@@ -74,11 +85,20 @@ const EventList = () => {
             </IconHand>
           </EventCard>
         ))}
-        <Stack spacing={2} alignItems="center" sx={{ marginTop: 4 }}>
+        <RegisterModal
+          open={registerModalOpen}
+          setOpen={setRegisterModalOpen}
+          eventId={selectedEventId}
+        />
+        <Stack
+          spacing={2}
+          alignItems="center"
+          sx={{ marginTop: 2, marginLeft: '50%' }}
+        >
           <Pagination
             count={3}
             page={pageNumber + 1}
-            color="darkOrange"
+            color="pelorous"
             onChange={(event, value) => setPageNumber(value - 1)}
             renderItem={(item) => (
               <PaginationItem
