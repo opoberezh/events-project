@@ -6,17 +6,20 @@ import { fetchParticipants } from '../redux/operations';
 import ParticipantsList from '../ParticipantsList/ParticipantsList';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectEvents, selectParticipants } from '../redux/selectors';
+import { TextWrapper, StyledText } from './ViewModal.styled';
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 566,
+  height: 600,
+  maxHeight: '80vh',
+  overflowY: 'auto',
   bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
+  borderRadius: 8,
+  p: 6,
 };
 
 export default function ViewModal({ open, setOpen, eventId }) {
@@ -45,7 +48,7 @@ export default function ViewModal({ open, setOpen, eventId }) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography variant="h6" component="h2">
+          <Typography variant="h4" component="h3">
             {event ? `${event.title} participants` : 'Loading...'}{' '}
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
@@ -55,9 +58,10 @@ export default function ViewModal({ open, setOpen, eventId }) {
                 registrations={participants}
               />
             ) : (
-              <div>
-                <p>There are no participants yet</p>
-              </div>
+              <TextWrapper>
+                <StyledText>Oops...</StyledText>
+                <StyledText> There are no participants yet</StyledText>
+              </TextWrapper>
             )}
           </Typography>
         </Box>

@@ -1,6 +1,8 @@
 // import { useSelector } from 'react-redux';
 // import { selectParticipants } from '../redux/selectors';
 
+import { Wrapper, StyledList, StyledItems } from './ParticipantsList.styled';
+
 const ParticipantsList = ({ eventId, registrations }) => {
   // if (!registrations || registrations.length === 0) {
   //   return <p>There are no participants yet</p>;
@@ -10,20 +12,20 @@ const ParticipantsList = ({ eventId, registrations }) => {
   );
 
   return (
-    <div>
-      <ul>
+    <Wrapper>
+      <StyledList>
         {eventRegistrations.map((registration) => (
-          <li key={registration.id}>
+          <StyledItems key={registration.id}>
             <div>
               <strong>{registration.fullName}</strong>
             </div>
             <div>
               <strong>{registration.email}</strong>
             </div>
-          </li>
+          </StyledItems>
         ))}
-      </ul>
-    </div>
+      </StyledList>
+    </Wrapper>
   );
 };
 
