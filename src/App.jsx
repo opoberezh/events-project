@@ -6,6 +6,7 @@ import CatalogPage from './pages/CatalogPage/CatalogPage';
 import ErrorPage from 'pages/ErrorPage/ErrorPage';
 import { AppWrapper } from './App.styled';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
+import ParticipantsPage from './pages/ParticipantsPage/ParticipantsPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<WelcomePage />} />
           <Route path="/catalog" element={<CatalogPage />} />
           <Route path="/register/:eventId" element={<RegisterPage />} />
+          <Route path="/participants/:eventId" element={<ParticipantsPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>

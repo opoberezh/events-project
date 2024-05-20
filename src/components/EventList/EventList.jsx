@@ -22,6 +22,7 @@ import {
 } from './EventList.styled';
 
 import RegisterModal from '../RegisterModal/RegisterModal';
+import ViewModal from '../ViewModal/ViewModal';
 
 const theme = createTheme({
   palette: {
@@ -48,6 +49,12 @@ const EventList = () => {
     setRegisterModalOpen(true);
   };
 
+  const [viewModalOpen, setViewModalOpen] = useState(false);
+
+  const handleOpenViewModal = (eventId) => {
+    setSelectedEventId(eventId);
+    setViewModalOpen(true);
+  };
   useEffect(() => {
     dispatch(eventActions.fetchEvents({ pageSize, pageNumber }));
   }, [dispatch, pageNumber, pageSize]);
@@ -77,7 +84,9 @@ const EventList = () => {
               <StyledLink onClick={() => handleOpenRegisterModal(item.id)}>
                 Register
               </StyledLink>
-              <StyledLink>View</StyledLink>
+              <StyledLink onClick={() => handleOpenViewModal(item.id)}>
+                View
+              </StyledLink>
             </RegisterWrapper>
 
             <IconHand>
@@ -88,6 +97,11 @@ const EventList = () => {
         <RegisterModal
           open={registerModalOpen}
           setOpen={setRegisterModalOpen}
+          eventId={selectedEventId}
+        />
+        <ViewModal
+          open={viewModalOpen}
+          setOpen={setViewModalOpen}
           eventId={selectedEventId}
         />
         <Stack

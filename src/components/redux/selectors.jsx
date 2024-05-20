@@ -5,3 +5,6 @@ export const selectRegistrations = (state) => state.registrations.items;
 export const selectIsLoadingRegistrations = (state) =>
   state.registrations.isLoading;
 export const selectErrorRegistrations = (state) => state.registrations.error;
+export const selectParticipants = (state) => state.registrations.items;
+export const selectLoading = (state) => state.registrations.loading;
+export const selectParticipantsError = (state) => state.registrations.error;

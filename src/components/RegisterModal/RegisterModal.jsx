@@ -137,27 +137,15 @@ const RegisterModal = ({ open, setOpen, eventId }) => {
                 </RadioTitle>
                 <RadioGroup role="group" aria-labelledby="my-radio-group">
                   <RadioLabel>
-                    <RadioField
-                      type="radio"
-                      name="heardAboutEvent"
-                      value="Social media"
-                    />
+                    <RadioField type="radio" name="heardAboutEvent" value="1" />
                     Social Media
                   </RadioLabel>
                   <label>
-                    <RadioField
-                      type="radio"
-                      name="heardAboutEvent"
-                      value="Friends"
-                    />
+                    <RadioField type="radio" name="heardAboutEvent" value="2" />
                     Friends
                   </label>
                   <label>
-                    <RadioField
-                      type="radio"
-                      name="heardAboutEvent"
-                      value="Found myself"
-                    />
+                    <RadioField type="radio" name="heardAboutEvent" value="3" />
                     Found myself
                   </label>
                 </RadioGroup>

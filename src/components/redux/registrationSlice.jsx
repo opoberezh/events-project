@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { registerEvent, fetchRegisteredUsersOnEvent } from './operations';
+import { registerEvent, fetchParticipants } from './operations';
 
 const handleRegisterPending = (state) => {
   state.isLoading = true;
@@ -51,18 +51,9 @@ const registrationSlice = createSlice({
       .addCase(registerEvent.pending, handleRegisterPending)
       .addCase(registerEvent.rejected, handleRegisterRejected)
       .addCase(registerEvent.fulfilled, handleRegisterEventsFulfilled)
-      .addCase(
-        fetchRegisteredUsersOnEvent.pending,
-        handleFetchRegistrationsPending
-      )
-      .addCase(
-        fetchRegisteredUsersOnEvent.rejected,
-        handleFetchRegistrationsRejected
-      )
-      .addCase(
-        fetchRegisteredUsersOnEvent.fulfilled,
-        handleFetchRegistrationsFulfilled
-      );
+      .addCase(fetchParticipants.pending, handleFetchRegistrationsPending)
+      .addCase(fetchParticipants.rejected, handleFetchRegistrationsRejected)
+      .addCase(fetchParticipants.fulfilled, handleFetchRegistrationsFulfilled);
   },
 });
 

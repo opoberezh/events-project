@@ -38,30 +38,28 @@ export const fetchEvents = createAsyncThunk(
 );
 
 export const registerEvent = createAsyncThunk(
-  'registrations/registerEvent',
-  async ({ eventId, values }, thunkAPI) => {
+  'events/registerEvent',
+  async (registrationData, { rejectWithValue }) => {
     try {
-      const res = await axios.post(
-        `/events/${eventId}/registrations.json`,
-        values
+      const response = await axios.post(
+        `/events/${registrationData.eventId}/registrations.json`,
+        registrationData
       );
-      return { eventId, registration: res.data };
+      return response.data;
     } catch (error) {
-      console.error('Error submitting registration form:', error);
-      alert('Registration failed, please try again.');
-      return thunkAPI.rejectWithValue(error.message);
+      return rejectWithValue(error.response.data);
     }
   }
 );
 
-export const fetchRegisteredUsersOnEvent = createAsyncThunk(
-  'registrations/fetchUsersOnEvent',
+export const fetchParticipants = createAsyncThunk(
+  'registrations/fetchParticipants',
   async (eventId, thunkAPI) => {
     try {
       const res = await axios.get(`/events/${eventId}/registrations.json`);
       const data = res.data;
       if (!data) {
-        throw new Error('No registrations found');
+        throw new Error('No Participants found');
       }
       const registrationsArray = Object.keys(data).map((key) => ({
         id: key,
@@ -69,7 +67,7 @@ export const fetchRegisteredUsersOnEvent = createAsyncThunk(
       }));
       return { eventId, registrations: registrationsArray };
     } catch (error) {
-      console.error('Error fetching registrations:', error);
+      console.error('Error fetching Participants:', error);
       return thunkAPI.rejectWithValue(error.message);
     }
   }
