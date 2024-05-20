@@ -107,7 +107,7 @@ const EventList = () => {
         <Stack
           spacing={2}
           alignItems="center"
-          sx={{ marginTop: 2, marginLeft: '50%' }}
+          sx={{ marginTop: 2, margin: '0 auto' }}
         >
           <Pagination
             count={3}
