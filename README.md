@@ -24,4 +24,4 @@ There is a possibility to view a number of participants
 ### Event Sorter
 
 There is a possibility to to sort Events dy title, event's date and by organizer
-![Catalog](./src/assets/sort.png.png)
+![Catalog](./src/assets/sort.png)
