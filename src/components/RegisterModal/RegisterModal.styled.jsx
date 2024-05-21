@@ -18,6 +18,7 @@ export const StyledField = styled(Field)`
   font-size: 18px;
   color: #121417;
   outline: none;
+  transaction: border-color 0.3s;
 
   &:hover,
   &:focus {

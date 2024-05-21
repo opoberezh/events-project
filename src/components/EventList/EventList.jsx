@@ -1,7 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { selectError, selectEvents, selectIsLoading } from '../redux/selectors';
-import { eventActions } from '../redux/eventsSlice';
-import { useEffect, useState } from 'react';
+import { selectError, selectIsLoading } from '../redux/selectors';
 import Pagination from '@mui/material/Pagination';
 import PaginationItem from '@mui/material/PaginationItem';
 import Stack from '@mui/material/Stack';
@@ -20,9 +18,10 @@ import {
   StyledLink,
   Title,
 } from './EventList.styled';
-
 import RegisterModal from '../RegisterModal/RegisterModal';
 import ViewModal from '../ViewModal/ViewModal';
+import { useState, useEffect } from 'react';
+import { fetchEvents } from '../redux/operations';
 
 const theme = createTheme({
   palette: {
@@ -32,16 +31,14 @@ const theme = createTheme({
   },
 });
 
-const EventList = () => {
+const EventList = ({ items }) => {
   const dispatch = useDispatch();
-  const items = useSelector(selectEvents);
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const [pageNumber, setPageNumber] = useState(0);
   const pageSize = 12;
 
   const [registerModalOpen, setRegisterModalOpen] = useState(false);
-  // Створюємо стан для відстеження id події для реєстрації
   const [selectedEventId, setSelectedEventId] = useState(null);
 
   const handleOpenRegisterModal = (eventId) => {
@@ -55,8 +52,9 @@ const EventList = () => {
     setSelectedEventId(eventId);
     setViewModalOpen(true);
   };
+
   useEffect(() => {
-    dispatch(eventActions.fetchEvents({ pageSize, pageNumber }));
+    dispatch(fetchEvents({ pageSize, pageNumber }));
   }, [dispatch, pageNumber, pageSize]);
 
   if (isLoading) return <div>Loading...</div>;
@@ -76,9 +74,14 @@ const EventList = () => {
               height={130}
               style={{ margin: '0 auto' }}
             />
-
             <Description>{item.description}</Description>
-            <DateOfEvent>{item.eventDate}</DateOfEvent>
+            <DateOfEvent>
+              {new Date(item.eventDate).toLocaleDateString()}{' '}
+              {new Date(item.eventDate).toLocaleTimeString([], {
+                hour: '2-digit',
+                minute: '2-digit',
+              })}
+            </DateOfEvent>
             <Organizer>{item.organizer}</Organizer>
             <RegisterWrapper>
               <StyledLink onClick={() => handleOpenRegisterModal(item.id)}>
@@ -88,7 +91,6 @@ const EventList = () => {
                 View
               </StyledLink>
             </RegisterWrapper>
-
             <IconHand>
               <PanToolAltIcon style={{ fill: '#ffffff' }} />
             </IconHand>

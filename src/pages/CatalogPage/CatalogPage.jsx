@@ -1,4 +1,6 @@
-import EventList from '../../components/EventList/EventList';
+// import EventList from '../../components/EventList/EventList';
+import EventsBoard from '../../components/EventsBoard/EventsBoard';
+// import SortEvents from '../../components/SortEvents/SortEvents';
 import { Container, Block, Title } from './CatalogPage.styled';
 
 const CatalogPage = () => {
@@ -6,7 +8,8 @@ const CatalogPage = () => {
     <Container>
       <Block>
         <Title>Events</Title>
-        <EventList />
+        <EventsBoard />
+        {/* <EventList /> */}
       </Block>
     </Container>
   );
