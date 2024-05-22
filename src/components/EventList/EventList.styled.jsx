@@ -76,3 +76,10 @@ export const RegisterWrapper = styled.div`
 export const StyledLink = styled(Link)`
   color: #1e90ff;
 `;
+
+// export const WrapperOfLoader = styled.div`
+// margin: 0 auto;
+//  width: 100%;
+//   height: 100vh;
+  
+// `;

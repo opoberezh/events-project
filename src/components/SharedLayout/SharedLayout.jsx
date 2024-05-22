@@ -1,7 +1,9 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
-const SharedLayout = () => {
+
+const SharedLayout = () => 
+{
   return (
     <>
       <Suspense fallback={null}>

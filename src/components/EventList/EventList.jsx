@@ -17,11 +17,13 @@ import {
   RegisterWrapper,
   StyledLink,
   Title,
+  
 } from './EventList.styled';
 import RegisterModal from '../RegisterModal/RegisterModal';
 import ViewModal from '../ViewModal/ViewModal';
 import { useState, useEffect } from 'react';
 import { fetchEvents } from '../redux/operations';
+import Loader from '../Loader/Loader';
 
 const theme = createTheme({
   palette: {
@@ -57,11 +59,17 @@ const EventList = ({ items }) => {
     dispatch(fetchEvents({ pageSize, pageNumber }));
   }, [dispatch, pageNumber, pageSize]);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading)
+    return (
+      
+        <Loader />
+     
+    );
   if (error) return <div>Error: {error}</div>;
 
   return (
     <ThemeProvider theme={theme}>
+    
       <Container>
         {items.map((item) => (
           <EventCard key={item.id}>

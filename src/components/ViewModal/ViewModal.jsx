@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectEvents, selectParticipants } from '../redux/selectors';
 import { TextWrapper, StyledText } from './ViewModal.styled';
 import CloseIcon from '@mui/icons-material/Close';
+import Loader from '../Loader/Loader';
 
 const style = {
   position: 'absolute',
@@ -52,7 +53,7 @@ export default function ViewModal({ open, setOpen, eventId }) {
           <CloseIcon
             onClick={handleClose}
             sx={{
-              position: 'absolute',
+              position: 'fixed',
               top: '6%',
               left: '93%',
               transform: 'translate(-50%, -50%)',
@@ -62,7 +63,7 @@ export default function ViewModal({ open, setOpen, eventId }) {
             }}
           />
           <Typography sx={{ color: '#1e90ff' }} variant="h4" component="h3">
-            {event ? `${event.title} participants` : 'Loading...'}{' '}
+            {event ? `${event.title} participants` : <Loader />}{' '}
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {participants.length > 0 ? (
