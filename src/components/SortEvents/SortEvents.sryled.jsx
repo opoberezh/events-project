@@ -22,10 +22,7 @@ export const StyledSelected = styled.select`
   border-radius: 10px;
   padding: 5px;
   outline: none;
-  box-shadow:
-    0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  
   transaction: border-color 0.3s;
 
   &:hover,
