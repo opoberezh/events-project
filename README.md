@@ -25,3 +25,8 @@ There is a possibility to view a number of participants
 
 There is a possibility to sort Events dy title, date and by organizer
 ![Catalog](./src/assets/sort.png)
+
+### Search participants
+
+After registration there is a functionality to search a participant by name and by email
+![Catalog](./src/assets/search.png)

@@ -12,6 +12,7 @@ import {
 import storage from 'redux-persist/lib/storage';
 import { registrationsReducer } from './registrationSlice';
 import { eventsReducer } from './eventsSlice';
+import { filterReducer } from './filterSlice';
 
 const registrationsPersistConfig = {
   key: 'registrations',
@@ -28,6 +29,7 @@ export const store = configureStore({
   reducer: {
     registrations: persistedRegistrationsReducer,
     events: eventsReducer,
+    filter: filterReducer,
   },
 
   middleware: (getDefaultMiddleware) =>

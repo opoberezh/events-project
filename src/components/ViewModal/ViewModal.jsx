@@ -1,14 +1,17 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import SearchIcon from '@mui/icons-material/Search';
 import Modal from '@mui/material/Modal';
+
 import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchParticipants } from '../redux/operations';
 import ParticipantsList from '../ParticipantsList/ParticipantsList';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectEvents, selectParticipants } from '../redux/selectors';
-import { TextWrapper, StyledText } from './ViewModal.styled';
+import { selectEvents, selectFilteredParticipants } from '../redux/selectors';
+import { TextWrapper, StyledText, StyledTextField } from './ViewModal.styled';
 import CloseIcon from '@mui/icons-material/Close';
 import Loader from '../Loader/Loader';
+import { setFilter } from '../redux/filterSlice';
 
 const style = {
   position: 'absolute',
@@ -29,7 +32,7 @@ export default function ViewModal({ open, setOpen, eventId }) {
   const events = useSelector(selectEvents);
   const event = events.find((event) => event.id === eventId);
   const participants = useSelector((state) =>
-    selectParticipants(state).filter(
+    selectFilteredParticipants(state).filter(
       (participant) => participant.eventId === eventId
     )
   );
@@ -40,6 +43,10 @@ export default function ViewModal({ open, setOpen, eventId }) {
       dispatch(fetchParticipants(eventId));
     }
   }, [dispatch, eventId]);
+
+  const handleSearchChange = (e) => {
+    dispatch(setFilter({ [e.target.name]: e.target.value }));
+  };
 
   return (
     <div>
@@ -65,6 +72,46 @@ export default function ViewModal({ open, setOpen, eventId }) {
           <Typography sx={{ color: '#1e90ff' }} variant="h4" component="h3">
             {event ? `${event.title} participants` : <Loader />}{' '}
           </Typography>
+          <div style={{position:"relative"}}>
+          <StyledTextField
+            fullWidth
+            margin="normal"
+            variant="outlined"
+            placeholder="Search by full name"
+            name="fullName"
+            onChange={handleSearchChange}
+          
+
+           
+          />
+          <SearchIcon 
+          sx={{ position:"absolute",
+top:"30px",
+right: "20px",
+color: "#1256da",
+        }}
+         
+          />
+          </div>
+          <div style={{position: "relative"}}>
+          <StyledTextField
+            fullWidth
+            margin="normal"
+            variant="outlined"
+            placeholder="Search by email"
+            name="email"
+            onChange={handleSearchChange}
+          />
+           <SearchIcon 
+          sx={{ position:"absolute",
+top:"30px",
+right: "20px",
+color: "#1256da",
+        }}
+         
+          />
+          </div>
+          
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {participants.length > 0 ? (
               <ParticipantsList
