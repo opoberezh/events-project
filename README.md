@@ -1,4 +1,4 @@
-# Spend Your Free Time With "Events Academy"
+# Spend Your Free Time With "Event Academy"
 
 ![Welcome.page](./src/assets/welcome.png)
 
